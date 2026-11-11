@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <!-- Thẻ meta giúp hiển thị co giãn chuẩn trên mọi thiết bị di động -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Xuân Phước | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. THANH ĐIỀU HƯỚNG CỐ ĐỊNH (HEADER) -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
+            <nav class="nav-menu">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. PHẦN HERO: TÊN, ẢNH ĐẠI DIỆN VÀ GIỚI THIỆU NGẮN -->
+        <section id="about" class="section hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">Sẵn sàng nhận dự án mới liên quan đến AI</span>
+                    <h1>Xin chào, tôi là <span class="highlight">Phạm Xuân Phước</span></h1>
+                    <p class="role">Frontend Developer / Kỹ sư Phần mềm, Kinh nghiệm 5 năm làm trong lĩnh vực xây dựng</p>
+                    <p class="bio">
+                        Tôi tập trung xây dựng các giao diện web tối ưu trải nghiệm người dùng, tốc độ tải nhanh và dễ bảo trì. Yêu thích việc biến ý tưởng thiết kế thành sản phẩm chạy mượt mà.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
+                        <a href="#contact" class="btn btn-outline">Liên hệ ngay</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <!-- Bạn thay đường dẫn ảnh đại diện thật vào thuộc tính src dưới đây -->
+                    <img src="IMG_0412.JPG" alt="Ảnh đại diện">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PHẦN KỸ NĂNG CHUYÊN MÔN -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                <div class="skills-grid">
+                    <!-- Nhóm 1 -->
+                    <div class="card skill-card">
+                        <h3>Frontend</h3>
+                        <p class="skill-tags">HTML5, CSS3, JavaScript, React.js, Tailwind CSS</p>
+                    </div>
+
+                    <!-- Nhóm 2 -->
+                    <div class="card skill-card">
+                        <h3>Backend &amp; Database</h3>
+                        <p class="skill-tags">Node.js, Express, RESTful API, PostgreSQL, MongoDB</p>
+                    </div>
+
+                    <!-- Nhóm 3 -->
+                    <div class="card skill-card">
+                        <h3>Công cụ &amp; Khác</h3>
+                        <p class="skill-tags">Git, GitHub, Docker, Figma, CI/CD cơ bản</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PHẦN DỰ ÁN TIÊU BIỂU -->
+        <section id="projects" class="section bg-card">
+            <div class="container">
+                <h2 class="section-title">Dự án tiêu biểu</h2>
+                <div class="projects-grid">
+                    <!-- Dự án 1 -->
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dự án 1" class="project-img">
+                        <div class="project-body">
+                            <h3>Nền tảng Quản lý Công việc</h3>
+                            <p>Ứng dụng quản lý dự án nội bộ cho đội nhóm với tính năng kéo thả và thông báo thời gian thực.</p>
+                            <div class="tags">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="link-btn">Xem Demo &rarr;</a>
+                                <a href="#" target="_blank" class="link-btn text-muted">Mã nguồn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dự án 2 -->
+                    <div class="card project-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Dự án 2" class="project-img">
+                        <div class="project-body">
+                            <h3>Bảng điều khiển Phân tích Dữ liệu</h3>
+                            <p>Website trực quan hóa số liệu tài chính doanh nghiệp với các biểu đồ tương tác thời gian thực.</p>
+                            <div class="tags">
+                                <span>JavaScript</span>
+                                <span>Chart.js</span>
+                                <span>REST API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" target="_blank" class="link-btn">Xem Demo &rarr;</a>
+                                <a href="#" target="_blank" class="link-btn text-muted">Mã nguồn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PHẦN LIÊN HỆ -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <h2 class="section-title">Kết nối với tôi</h2>
+                <p class="contact-desc">
+                    Bạn đang có dự án cần cộng tác hoặc chỉ đơn giản muốn trao đổi thêm về kỹ thuật? Hãy gửi lời nhắn!
+                </p>
+
+                <!-- Form liên hệ cơ bản -->
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Đã gửi thông tin!');">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Lời nhắn</label>
+                        <textarea id="message" rows="4" placeholder="Nội dung cần trao đổi..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">Gửi tin nhắn</button>
+                </form>
+
+                <div class="direct-contact">
+                    <p>Hoặc gửi trực tiếp qua email: <strong>contact@example.com</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CHÂN TRANG (FOOTER) -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Phạm Xuân Phước. Thiết kế với HTML và CSS thuần.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

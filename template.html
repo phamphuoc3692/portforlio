@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <!-- Thẻ meta giúp hiển thị co giãn chuẩn trên mọi thiết bị di động -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}} | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. THANH ĐIỀU HƯỚNG CỐ ĐỊNH (HEADER) -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
+            <nav class="nav-menu">
+                <a href="#about">Giới thiệu</a>
+                <a href="#skills">Kỹ năng</a>
+                <a href="#projects">Dự án</a>
+                <a href="#contact">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. PHẦN HERO: TÊN, ẢNH ĐẠI DIỆN VÀ GIỚI THIỆU NGẮN -->
+        <section id="about" class="section hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="badge">{{badge}}</span>
+                    <h1>Xin chào, tôi là <span class="highlight">{{name}}</span></h1>
+                    <p class="role">{{role}}</p>
+                    <p class="bio">
+                        {{bio}}
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Xem dự án</a>
+                        <a href="#contact" class="btn btn-outline">Liên hệ ngay</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <!-- Bạn thay đường dẫn ảnh đại diện thật vào thuộc tính src dưới đây -->
+                    <img src="IMG_0412.JPG" alt="Ảnh đại diện">
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PHẦN KỸ NĂNG CHUYÊN MÔN -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Kỹ năng chuyên môn</h2>
+                <div class="skills-grid">
+{{skills}}
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PHẦN DỰ ÁN TIÊU BIỂU -->
+        <section id="projects" class="section bg-card">
+            <div class="container">
+                <h2 class="section-title">{{projects_title}}</h2>
+                <div class="projects-grid">
+{{projects}}
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PHẦN LIÊN HỆ -->
+        <section id="contact" class="section">
+            <div class="container contact-container">
+                <h2 class="section-title">{{contact_title}}</h2>
+                <p class="contact-desc">
+                    {{contact_desc}}
+                </p>
+
+                <!-- Form liên hệ cơ bản -->
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('{{contact_alert}}');">
+                    <div class="form-group">
+                        <label for="name">Họ và tên</label>
+                        <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="email@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Lời nhắn</label>
+                        <textarea id="message" rows="4" placeholder="Nội dung cần trao đổi..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block">{{contact_button}}</button>
+                </form>
+
+                <div class="direct-contact">
+                    <p>Hoặc gửi trực tiếp qua email: <strong>{{contact_email}}</strong></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CHÂN TRANG (FOOTER) -->
+    <footer class="footer">
+        <div class="container">
+            <p>{{footer}}</p>
+        </div>
+    </footer>
+
+</body>
+</html>
